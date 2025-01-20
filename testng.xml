@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="utils.SuiteListener"></listener>
+        <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>
+    </listeners>
+    <test thread-count="2" name="Test">
+        <parameter name="env" value="dev" />
+        <parameter name="browser" value="chrome" />
+        <parameter name="headless" value="false" />
+        <classes>
+            <class name="qa.tests.LoginPage" />
+        </classes>
+    </test>
+</suite>

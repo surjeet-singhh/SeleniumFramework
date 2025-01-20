@@ -1,0 +1,282 @@
+[INFO ] 2025-01-17 22:10:32.829 [main] BaseTest - Environment set to: qa
+[DEBUG] 2025-01-17 22:10:32.835 [main] BaseTest - Config file reloaded for environment: qa
+[INFO ] 2025-01-17 22:10:32.836 [main] BaseTest - URL loaded from config: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-17 22:10:32.859 [main] BaseTest - Setting up WebDriver for browser: chrome, headless: false
+[INFO ] 2025-01-17 22:10:35.235 [main] BaseTest - ChromeDriver initialized.
+[INFO ] 2025-01-17 22:10:44.494 [main] BaseTest - Navigated to URL: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-17 22:10:44.512 [main] BaseTest - Implicit wait set to 20 seconds.
+[INFO ] 2025-01-17 22:10:44.605 [main] LoginPage - Enter username and password and click on signin
+[INFO ] 2025-01-17 22:10:44.605 [main] LoginPageEvents - Enter username
+[INFO ] 2025-01-17 22:10:44.606 [main] BaseTest - Entering text '6465551114' into element: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-17 22:10:44.608 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-17 22:10:44.892 [main] LoginPageEvents - Enter password
+[INFO ] 2025-01-17 22:10:44.892 [main] BaseTest - Entering text 'Test@123' into element: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-17 22:10:44.892 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-17 22:10:45.118 [main] LoginPageEvents - Click on SignIn button
+[INFO ] 2025-01-17 22:10:45.118 [main] BaseTest - Clicking on element: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-17 22:10:45.118 [main] BaseTest - Waiting for element to be clickable: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[DEBUG] 2025-01-17 22:10:45.260 [main] LoginPage - User landed to dashboard
+[INFO ] 2025-01-17 22:10:45.261 [main] HomePageEvents - Verifying the landing page by checking the 'Sign Out' text.
+[INFO ] 2025-01-17 22:10:45.262 [main] BaseTest - Getting text from element: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[INFO ] 2025-01-17 22:10:45.262 [main] BaseTest - Waiting for element to be visible: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[DEBUG] 2025-01-17 22:10:48.367 [main] HomePageEvents - Retrieved 'Sign Out' text: Sign out
+[INFO ] 2025-01-17 22:10:48.371 [main] HomePageEvents - Landing page verified successfully. 'Sign Out' text matches the expected value.
+[INFO ] 2025-01-17 22:10:48.387 [main] BaseTest - Tearing down WebDriver.
+[INFO ] 2025-01-17 22:24:49.366 [main] SuiteListener - Retry logic applied for test: Login
+[INFO ] 2025-01-17 22:24:49.474 [main] SuiteListener - Test suite started: Test
+[INFO ] 2025-01-17 22:24:49.495 [main] BaseTest - Environment set to: qa
+[INFO ] 2025-01-17 22:24:49.497 [main] ConfigFileReader - Reloading ConfigFileReader instance.
+[INFO ] 2025-01-17 22:24:49.497 [main] ConfigFileReader - Creating new instance of ConfigFileReader.
+[INFO ] 2025-01-17 22:24:49.497 [main] ConfigFileReader - Loading configuration for environment: qa
+[INFO ] 2025-01-17 22:24:49.497 [main] ConfigFileReader - Configuration file: config_qa.properties
+[INFO ] 2025-01-17 22:24:49.498 [main] ConfigFileReader - Configuration file loaded successfully: config_qa.properties
+[DEBUG] 2025-01-17 22:24:49.498 [main] BaseTest - Config file reloaded for environment: qa
+[INFO ] 2025-01-17 22:24:49.498 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-17 22:24:49.498 [main] BaseTest - URL loaded from config: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-17 22:24:49.517 [main] BaseTest - Setting up WebDriver for browser: chrome, headless: false
+[INFO ] 2025-01-17 22:24:51.849 [main] BaseTest - ChromeDriver initialized.
+[INFO ] 2025-01-17 22:24:51.909 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-17 22:24:58.021 [main] BaseTest - Navigated to URL: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-17 22:24:58.039 [main] BaseTest - Implicit wait set to 20 seconds.
+[INFO ] 2025-01-17 22:24:58.046 [main] SuiteListener - Test started: Login
+[INFO ] 2025-01-17 22:24:58.048 [main] LoginPage - Starting Login test - Entering username and password
+[INFO ] 2025-01-17 22:24:58.048 [main] ConfigFileReader - Retrieved property 'username': 6465551114
+[INFO ] 2025-01-17 22:24:58.048 [main] ConfigFileReader - Retrieved property 'password': Test@123
+[DEBUG] 2025-01-17 22:24:58.048 [main] LoginPage - Attempting to login with username: 6465551114
+[INFO ] 2025-01-17 22:24:58.048 [main] LoginPageEvents - Starting the sign-in process.
+[INFO ] 2025-01-17 22:24:58.048 [main] LoginPageEvents - Entering username: 6465551114
+[INFO ] 2025-01-17 22:24:58.048 [main] BaseTest - Entering text '6465551114' into element: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-17 22:24:58.048 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-17 22:24:58.270 [main] LoginPageEvents - Entering password: Test@123
+[INFO ] 2025-01-17 22:24:58.271 [main] BaseTest - Entering text 'Test@123' into element: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-17 22:24:58.272 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-17 22:24:58.414 [main] LoginPageEvents - Clicking on the Sign-In button.
+[INFO ] 2025-01-17 22:24:58.414 [main] BaseTest - Clicking on element: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-17 22:24:58.414 [main] BaseTest - Waiting for element to be clickable: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-17 22:24:58.558 [main] LoginPageEvents - Sign-in process completed.
+[DEBUG] 2025-01-17 22:24:58.559 [main] LoginPage - User has successfully logged in and landed on the dashboard
+[INFO ] 2025-01-17 22:24:58.559 [main] HomePageEvents - Verifying the landing page by checking the 'Sign Out' text.
+[INFO ] 2025-01-17 22:24:58.559 [main] BaseTest - Getting text from element: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[INFO ] 2025-01-17 22:24:58.559 [main] BaseTest - Waiting for element to be visible: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[DEBUG] 2025-01-17 22:25:03.549 [main] HomePageEvents - Retrieved 'Sign Out' text: Sign out
+[INFO ] 2025-01-17 22:25:03.551 [main] HomePageEvents - Landing page verified successfully. 'Sign Out' text matches the expected value.
+[INFO ] 2025-01-17 22:25:03.554 [main] SuiteListener - Test passed: Login
+[INFO ] 2025-01-17 22:25:03.558 [main] BaseTest - Tearing down WebDriver.
+[INFO ] 2025-01-17 22:25:04.761 [main] SuiteListener - Test suite finished: Test
+[INFO ] 2025-01-20 15:55:05.326 [main] SuiteListener - Retry logic applied for test: Login
+[INFO ] 2025-01-20 15:55:05.465 [main] SuiteListener - Test suite started: Test
+[INFO ] 2025-01-20 15:55:05.485 [main] BaseTest - Environment set to: qa
+[INFO ] 2025-01-20 15:55:05.486 [main] ConfigFileReader - Reloading ConfigFileReader instance.
+[INFO ] 2025-01-20 15:55:05.486 [main] ConfigFileReader - Creating new instance of ConfigFileReader.
+[INFO ] 2025-01-20 15:55:05.486 [main] ConfigFileReader - Loading configuration for environment: qa
+[INFO ] 2025-01-20 15:55:05.486 [main] ConfigFileReader - Configuration file: config_qa.properties
+[INFO ] 2025-01-20 15:55:05.487 [main] ConfigFileReader - Configuration file loaded successfully: config_qa.properties
+[DEBUG] 2025-01-20 15:55:05.487 [main] BaseTest - Config file reloaded for environment: qa
+[INFO ] 2025-01-20 15:55:05.487 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:55:05.487 [main] BaseTest - URL loaded from config: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:55:05.509 [main] BaseTest - Setting up WebDriver for browser: chrome, headless: false
+[INFO ] 2025-01-20 15:55:17.258 [main] BaseTest - ChromeDriver initialized.
+[INFO ] 2025-01-20 15:55:17.318 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:55:28.955 [main] BaseTest - Navigated to URL: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:55:28.984 [main] BaseTest - Implicit wait set to 20 seconds.
+[INFO ] 2025-01-20 15:55:29.003 [main] SuiteListener - Test started: Login
+[INFO ] 2025-01-20 15:55:29.012 [main] LoginPage - Starting Login test - Entering username and password
+[INFO ] 2025-01-20 15:55:29.013 [main] ConfigFileReader - Retrieved property 'username': 6465551114
+[INFO ] 2025-01-20 15:55:29.013 [main] ConfigFileReader - Retrieved property 'password': Test@123
+[DEBUG] 2025-01-20 15:55:29.013 [main] LoginPage - Attempting to login with username: 6465551114
+[INFO ] 2025-01-20 15:55:29.013 [main] LoginPageEvents - Starting the sign-in process.
+[INFO ] 2025-01-20 15:55:29.014 [main] LoginPageEvents - Entering username: 6465551114
+[INFO ] 2025-01-20 15:55:29.014 [main] BaseTest - Entering text '6465551114' into element: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 15:55:29.014 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 15:55:29.426 [main] LoginPageEvents - Entering password: Test@123
+[INFO ] 2025-01-20 15:55:29.426 [main] BaseTest - Entering text 'Test@123' into element: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 15:55:29.426 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 15:55:29.608 [main] LoginPageEvents - Clicking on the Sign-In button.
+[INFO ] 2025-01-20 15:55:29.608 [main] BaseTest - Clicking on element: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 15:55:29.608 [main] BaseTest - Waiting for element to be clickable: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 15:55:29.781 [main] LoginPageEvents - Sign-in process completed.
+[DEBUG] 2025-01-20 15:55:29.781 [main] LoginPage - User has successfully logged in and landed on the dashboard
+[INFO ] 2025-01-20 15:55:29.781 [main] HomePageEvents - Verifying the landing page by checking the 'Sign Out' text.
+[INFO ] 2025-01-20 15:55:29.781 [main] BaseTest - Getting text from element: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[INFO ] 2025-01-20 15:55:29.781 [main] BaseTest - Waiting for element to be visible: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[DEBUG] 2025-01-20 15:55:34.204 [main] HomePageEvents - Retrieved 'Sign Out' text: Sign out
+[INFO ] 2025-01-20 15:55:34.209 [main] HomePageEvents - Landing page verified successfully. 'Sign Out' text matches the expected value.
+[INFO ] 2025-01-20 15:55:34.210 [main] SuiteListener - Test passed: Login
+[INFO ] 2025-01-20 15:55:34.217 [main] BaseTest - Tearing down WebDriver.
+[INFO ] 2025-01-20 15:55:34.594 [main] SuiteListener - Test suite finished: Test
+[INFO ] 2025-01-20 15:55:49.478 [main] SuiteListener - Retry logic applied for test: Login
+[INFO ] 2025-01-20 15:55:49.593 [main] SuiteListener - Test suite started: Test
+[INFO ] 2025-01-20 15:55:49.613 [main] BaseTest - Environment set to: dev
+[INFO ] 2025-01-20 15:55:49.615 [main] ConfigFileReader - Reloading ConfigFileReader instance.
+[INFO ] 2025-01-20 15:55:49.615 [main] ConfigFileReader - Creating new instance of ConfigFileReader.
+[INFO ] 2025-01-20 15:55:49.615 [main] ConfigFileReader - Loading configuration for environment: dev
+[INFO ] 2025-01-20 15:55:49.615 [main] ConfigFileReader - Configuration file: config_dev.properties
+[INFO ] 2025-01-20 15:55:49.616 [main] ConfigFileReader - Configuration file loaded successfully: config_dev.properties
+[DEBUG] 2025-01-20 15:55:49.616 [main] BaseTest - Config file reloaded for environment: dev
+[INFO ] 2025-01-20 15:55:49.616 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:55:49.616 [main] BaseTest - URL loaded from config: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:55:49.640 [main] BaseTest - Setting up WebDriver for browser: chrome, headless: false
+[INFO ] 2025-01-20 15:55:51.836 [main] BaseTest - ChromeDriver initialized.
+[INFO ] 2025-01-20 15:55:51.889 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:56:06.043 [main] BaseTest - Navigated to URL: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:56:06.052 [main] BaseTest - Implicit wait set to 20 seconds.
+[INFO ] 2025-01-20 15:56:06.087 [main] SuiteListener - Test started: Login
+[INFO ] 2025-01-20 15:56:06.096 [main] LoginPage - Starting Login test - Entering username and password
+[INFO ] 2025-01-20 15:56:06.096 [main] ConfigFileReader - Retrieved property 'username': surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 15:56:06.098 [main] ConfigFileReader - Retrieved property 'password': Test@123
+[DEBUG] 2025-01-20 15:56:06.098 [main] LoginPage - Attempting to login with username: surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 15:56:06.098 [main] LoginPageEvents - Starting the sign-in process.
+[INFO ] 2025-01-20 15:56:06.098 [main] LoginPageEvents - Entering username: surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 15:56:06.098 [main] BaseTest - Entering text 'surjeet.singh@sqelabs.com' into element: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 15:56:06.098 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 15:56:06.377 [main] LoginPageEvents - Entering password: Test@123
+[INFO ] 2025-01-20 15:56:06.391 [main] BaseTest - Entering text 'Test@123' into element: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 15:56:06.391 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 15:56:06.580 [main] LoginPageEvents - Clicking on the Sign-In button.
+[INFO ] 2025-01-20 15:56:06.585 [main] BaseTest - Clicking on element: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 15:56:06.585 [main] BaseTest - Waiting for element to be clickable: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 15:56:06.734 [main] LoginPageEvents - Sign-in process completed.
+[DEBUG] 2025-01-20 15:56:06.734 [main] LoginPage - User has successfully logged in and landed on the dashboard
+[INFO ] 2025-01-20 15:56:06.734 [main] HomePageEvents - Verifying the landing page by checking the 'Sign Out' text.
+[INFO ] 2025-01-20 15:56:06.734 [main] BaseTest - Getting text from element: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[INFO ] 2025-01-20 15:56:06.734 [main] BaseTest - Waiting for element to be visible: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[DEBUG] 2025-01-20 15:56:11.603 [main] HomePageEvents - Retrieved 'Sign Out' text: Sign out
+[INFO ] 2025-01-20 15:56:11.609 [main] HomePageEvents - Landing page verified successfully. 'Sign Out' text matches the expected value.
+[INFO ] 2025-01-20 15:56:11.626 [main] SuiteListener - Test passed: Login
+[INFO ] 2025-01-20 15:56:11.641 [main] BaseTest - Tearing down WebDriver.
+[INFO ] 2025-01-20 15:56:12.115 [main] SuiteListener - Test suite finished: Test
+[INFO ] 2025-01-20 15:57:03.374 [main] SuiteListener - Retry logic applied for test: Login
+[INFO ] 2025-01-20 15:57:03.469 [main] SuiteListener - Test suite started: Test
+[INFO ] 2025-01-20 15:57:03.487 [main] BaseTest - Environment set to: qa
+[INFO ] 2025-01-20 15:57:03.490 [main] ConfigFileReader - Reloading ConfigFileReader instance.
+[INFO ] 2025-01-20 15:57:03.490 [main] ConfigFileReader - Creating new instance of ConfigFileReader.
+[INFO ] 2025-01-20 15:57:03.490 [main] ConfigFileReader - Loading configuration for environment: qa
+[INFO ] 2025-01-20 15:57:03.490 [main] ConfigFileReader - Configuration file: config_qa.properties
+[INFO ] 2025-01-20 15:57:03.491 [main] ConfigFileReader - Configuration file loaded successfully: config_qa.properties
+[DEBUG] 2025-01-20 15:57:03.491 [main] BaseTest - Config file reloaded for environment: qa
+[INFO ] 2025-01-20 15:57:03.491 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:57:03.491 [main] BaseTest - URL loaded from config: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:57:03.514 [main] BaseTest - Setting up WebDriver for browser: chrome, headless: false
+[INFO ] 2025-01-20 15:57:05.913 [main] BaseTest - ChromeDriver initialized.
+[INFO ] 2025-01-20 15:57:05.955 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:57:17.026 [main] BaseTest - Navigated to URL: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:57:17.038 [main] BaseTest - Implicit wait set to 20 seconds.
+[INFO ] 2025-01-20 15:57:17.041 [main] SuiteListener - Test started: Login
+[INFO ] 2025-01-20 15:57:17.048 [main] LoginPage - Starting Login test - Entering username and password
+[INFO ] 2025-01-20 15:57:17.048 [main] ConfigFileReader - Retrieved property 'username': 6465551114
+[INFO ] 2025-01-20 15:57:17.048 [main] ConfigFileReader - Retrieved property 'password': Test@123
+[DEBUG] 2025-01-20 15:57:17.048 [main] LoginPage - Attempting to login with username: 6465551114
+[INFO ] 2025-01-20 15:57:17.048 [main] LoginPageEvents - Starting the sign-in process.
+[INFO ] 2025-01-20 15:57:17.048 [main] LoginPageEvents - Entering username: 6465551114
+[INFO ] 2025-01-20 15:57:17.048 [main] BaseTest - Entering text '6465551114' into element: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 15:57:17.048 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 15:57:17.399 [main] LoginPageEvents - Entering password: Test@123
+[INFO ] 2025-01-20 15:57:17.399 [main] BaseTest - Entering text 'Test@123' into element: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 15:57:17.399 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 15:57:17.551 [main] LoginPageEvents - Clicking on the Sign-In button.
+[INFO ] 2025-01-20 15:57:17.551 [main] BaseTest - Clicking on element: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 15:57:17.551 [main] BaseTest - Waiting for element to be clickable: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 15:57:17.706 [main] LoginPageEvents - Sign-in process completed.
+[DEBUG] 2025-01-20 15:57:17.706 [main] LoginPage - User has successfully logged in and landed on the dashboard
+[INFO ] 2025-01-20 15:57:17.706 [main] HomePageEvents - Verifying the landing page by checking the 'Sign Out' text.
+[INFO ] 2025-01-20 15:57:17.706 [main] BaseTest - Getting text from element: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[INFO ] 2025-01-20 15:57:17.706 [main] BaseTest - Waiting for element to be visible: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[DEBUG] 2025-01-20 15:57:25.290 [main] HomePageEvents - Retrieved 'Sign Out' text: Sign out
+[INFO ] 2025-01-20 15:57:25.295 [main] HomePageEvents - Landing page verified successfully. 'Sign Out' text matches the expected value.
+[INFO ] 2025-01-20 15:57:25.300 [main] SuiteListener - Test passed: Login
+[INFO ] 2025-01-20 15:57:25.302 [main] BaseTest - Tearing down WebDriver.
+[INFO ] 2025-01-20 15:57:25.635 [main] SuiteListener - Test suite finished: Test
+[INFO ] 2025-01-20 15:57:47.581 [main] SuiteListener - Retry logic applied for test: Login
+[INFO ] 2025-01-20 15:57:47.723 [main] SuiteListener - Test suite started: Test
+[INFO ] 2025-01-20 15:57:47.742 [main] BaseTest - Environment set to: qa
+[INFO ] 2025-01-20 15:57:47.744 [main] ConfigFileReader - Reloading ConfigFileReader instance.
+[INFO ] 2025-01-20 15:57:47.744 [main] ConfigFileReader - Creating new instance of ConfigFileReader.
+[INFO ] 2025-01-20 15:57:47.744 [main] ConfigFileReader - Loading configuration for environment: qa
+[INFO ] 2025-01-20 15:57:47.744 [main] ConfigFileReader - Configuration file: config_qa.properties
+[INFO ] 2025-01-20 15:57:47.745 [main] ConfigFileReader - Configuration file loaded successfully: config_qa.properties
+[DEBUG] 2025-01-20 15:57:47.745 [main] BaseTest - Config file reloaded for environment: qa
+[INFO ] 2025-01-20 15:57:47.746 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:57:47.746 [main] BaseTest - URL loaded from config: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:57:47.766 [main] BaseTest - Setting up WebDriver for browser: chrome, headless: false
+[INFO ] 2025-01-20 15:58:01.882 [main] SuiteListener - Retry logic applied for test: Login
+[INFO ] 2025-01-20 15:58:02.012 [main] SuiteListener - Test suite started: Test
+[INFO ] 2025-01-20 15:58:02.029 [main] BaseTest - Environment set to: dev
+[INFO ] 2025-01-20 15:58:02.030 [main] ConfigFileReader - Reloading ConfigFileReader instance.
+[INFO ] 2025-01-20 15:58:02.030 [main] ConfigFileReader - Creating new instance of ConfigFileReader.
+[INFO ] 2025-01-20 15:58:02.030 [main] ConfigFileReader - Loading configuration for environment: dev
+[INFO ] 2025-01-20 15:58:02.030 [main] ConfigFileReader - Configuration file: config_dev.properties
+[INFO ] 2025-01-20 15:58:02.031 [main] ConfigFileReader - Configuration file loaded successfully: config_dev.properties
+[DEBUG] 2025-01-20 15:58:02.032 [main] BaseTest - Config file reloaded for environment: dev
+[INFO ] 2025-01-20 15:58:02.032 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:58:02.032 [main] BaseTest - URL loaded from config: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:58:02.052 [main] BaseTest - Setting up WebDriver for browser: firefox, headless: false
+[INFO ] 2025-01-20 15:58:09.128 [main] BaseTest - FirefoxDriver initialized.
+[INFO ] 2025-01-20 15:58:09.410 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:58:19.289 [main] BaseTest - Navigated to URL: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:58:19.303 [main] BaseTest - Implicit wait set to 20 seconds.
+[INFO ] 2025-01-20 15:58:19.334 [main] SuiteListener - Test started: Login
+[INFO ] 2025-01-20 15:58:19.343 [main] LoginPage - Starting Login test - Entering username and password
+[INFO ] 2025-01-20 15:58:19.343 [main] ConfigFileReader - Retrieved property 'username': surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 15:58:19.343 [main] ConfigFileReader - Retrieved property 'password': Test@123
+[DEBUG] 2025-01-20 15:58:19.343 [main] LoginPage - Attempting to login with username: surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 15:58:19.343 [main] LoginPageEvents - Starting the sign-in process.
+[INFO ] 2025-01-20 15:58:19.343 [main] LoginPageEvents - Entering username: surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 15:58:19.345 [main] BaseTest - Entering text 'surjeet.singh@sqelabs.com' into element: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 15:58:19.345 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 15:58:19.548 [main] LoginPageEvents - Entering password: Test@123
+[INFO ] 2025-01-20 15:58:19.548 [main] BaseTest - Entering text 'Test@123' into element: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 15:58:19.548 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 15:58:19.773 [main] LoginPageEvents - Clicking on the Sign-In button.
+[INFO ] 2025-01-20 15:58:19.773 [main] BaseTest - Clicking on element: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 15:58:19.773 [main] BaseTest - Waiting for element to be clickable: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 15:58:20.251 [main] LoginPageEvents - Sign-in process completed.
+[DEBUG] 2025-01-20 15:58:20.251 [main] LoginPage - User has successfully logged in and landed on the dashboard
+[INFO ] 2025-01-20 15:58:20.251 [main] HomePageEvents - Verifying the landing page by checking the 'Sign Out' text.
+[INFO ] 2025-01-20 15:58:20.251 [main] BaseTest - Getting text from element: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[INFO ] 2025-01-20 15:58:20.251 [main] BaseTest - Waiting for element to be visible: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[DEBUG] 2025-01-20 15:58:22.929 [main] HomePageEvents - Retrieved 'Sign Out' text: Sign out
+[INFO ] 2025-01-20 15:58:22.932 [main] HomePageEvents - Landing page verified successfully. 'Sign Out' text matches the expected value.
+[INFO ] 2025-01-20 15:58:22.934 [main] SuiteListener - Test passed: Login
+[INFO ] 2025-01-20 15:58:22.941 [main] BaseTest - Tearing down WebDriver.
+[INFO ] 2025-01-20 15:58:23.993 [main] SuiteListener - Test suite finished: Test
+[INFO ] 2025-01-20 15:59:48.943 [main] SuiteListener - Retry logic applied for test: Login
+[INFO ] 2025-01-20 15:59:49.084 [main] SuiteListener - Test suite started: Test
+[INFO ] 2025-01-20 15:59:49.101 [main] BaseTest - Environment set to: dev
+[INFO ] 2025-01-20 15:59:49.103 [main] ConfigFileReader - Reloading ConfigFileReader instance.
+[INFO ] 2025-01-20 15:59:49.104 [main] ConfigFileReader - Creating new instance of ConfigFileReader.
+[INFO ] 2025-01-20 15:59:49.104 [main] ConfigFileReader - Loading configuration for environment: dev
+[INFO ] 2025-01-20 15:59:49.104 [main] ConfigFileReader - Configuration file: config_dev.properties
+[INFO ] 2025-01-20 15:59:49.105 [main] ConfigFileReader - Configuration file loaded successfully: config_dev.properties
+[DEBUG] 2025-01-20 15:59:49.105 [main] BaseTest - Config file reloaded for environment: dev
+[INFO ] 2025-01-20 15:59:49.106 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:59:49.106 [main] BaseTest - URL loaded from config: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 15:59:49.125 [main] BaseTest - Setting up WebDriver for browser: chrome, headless: false
+[INFO ] 2025-01-20 15:59:51.464 [main] BaseTest - ChromeDriver initialized.
+[INFO ] 2025-01-20 15:59:51.513 [main] ConfigFileReader - Retrieved property 'url': https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 16:00:25.224 [main] BaseTest - Navigated to URL: https://sibtestenv.azurewebsites.net/Account/Login
+[INFO ] 2025-01-20 16:00:25.236 [main] BaseTest - Implicit wait set to 20 seconds.
+[INFO ] 2025-01-20 16:00:25.245 [main] SuiteListener - Test started: Login
+[INFO ] 2025-01-20 16:00:25.247 [main] LoginPage - Starting Login test - Entering username and password
+[INFO ] 2025-01-20 16:00:25.247 [main] ConfigFileReader - Retrieved property 'username': surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 16:00:25.247 [main] ConfigFileReader - Retrieved property 'password': Test@123
+[DEBUG] 2025-01-20 16:00:25.247 [main] LoginPage - Attempting to login with username: surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 16:00:25.247 [main] LoginPageEvents - Starting the sign-in process.
+[INFO ] 2025-01-20 16:00:25.247 [main] LoginPageEvents - Entering username: surjeet.singh@sqelabs.com
+[INFO ] 2025-01-20 16:00:25.247 [main] BaseTest - Entering text 'surjeet.singh@sqelabs.com' into element: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 16:00:25.247 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='userName']
+[INFO ] 2025-01-20 16:00:25.509 [main] LoginPageEvents - Entering password: Test@123
+[INFO ] 2025-01-20 16:00:25.509 [main] BaseTest - Entering text 'Test@123' into element: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 16:00:25.509 [main] BaseTest - Waiting for element to be visible: By.cssSelector: input[name='passWord']
+[INFO ] 2025-01-20 16:00:25.696 [main] LoginPageEvents - Clicking on the Sign-In button.
+[INFO ] 2025-01-20 16:00:25.696 [main] BaseTest - Clicking on element: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 16:00:25.696 [main] BaseTest - Waiting for element to be clickable: By.xpath: //*[@id='loginAdvDivId']/div[2]/div/button
+[INFO ] 2025-01-20 16:00:25.864 [main] LoginPageEvents - Sign-in process completed.
+[DEBUG] 2025-01-20 16:00:25.864 [main] LoginPage - User has successfully logged in and landed on the dashboard
+[INFO ] 2025-01-20 16:00:25.864 [main] HomePageEvents - Verifying the landing page by checking the 'Sign Out' text.
+[INFO ] 2025-01-20 16:00:25.866 [main] BaseTest - Getting text from element: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[INFO ] 2025-01-20 16:00:25.867 [main] BaseTest - Waiting for element to be visible: By.xpath: //*[@id='sidebar']/div/div/a[3]
+[DEBUG] 2025-01-20 16:00:35.192 [main] HomePageEvents - Retrieved 'Sign Out' text: Sign out
+[INFO ] 2025-01-20 16:00:35.194 [main] HomePageEvents - Landing page verified successfully. 'Sign Out' text matches the expected value.
+[INFO ] 2025-01-20 16:00:35.196 [main] SuiteListener - Test passed: Login
+[INFO ] 2025-01-20 16:00:35.198 [main] BaseTest - Tearing down WebDriver.
+[INFO ] 2025-01-20 16:00:35.448 [main] SuiteListener - Test suite finished: Test
