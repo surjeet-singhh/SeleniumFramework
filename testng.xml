@@ -6,7 +6,7 @@
         <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>
     </listeners>
     <test thread-count="2" name="Test">
-        <parameter name="env" value="dev" />
+        <parameter name="env" value="qa" />
         <parameter name="browser" value="chrome" />
         <parameter name="headless" value="false" />
         <classes>

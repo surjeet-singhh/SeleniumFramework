@@ -19,8 +19,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import utils.ConfigFileReader;
 
@@ -34,9 +36,9 @@ public class BaseTest {
      *
      * @param env - The environment name (e.g., dev, qa, prod).
      */
-    @BeforeTest
+    @BeforeClass
     @Parameters("env")
-    public void setEnvironment(String env) {
+    public void setEnvironment(@Optional("dev")String env) {
         if (env != null && !env.isEmpty()) {
             System.setProperty("env", env);
             log.info("Environment set to: {}", env);
@@ -63,7 +65,7 @@ public class BaseTest {
      */
     @BeforeMethod
     @Parameters({"browser", "headless"})
-    public void setupDriver(String browser, boolean headless) {
+    public void setupDriver(@Optional("chrome")String browser, @Optional("false")boolean headless) {
         log.info("Setting up WebDriver for browser: {}, headless: {}", browser, headless);
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions chromeOptions = new ChromeOptions();
@@ -75,6 +77,14 @@ public class BaseTest {
         } else if (browser.equalsIgnoreCase("firefox")) {
             driver.set(new FirefoxDriver());
             log.info("FirefoxDriver initialized.");
+        }
+        else {
+        	ChromeOptions chromeOptions = new ChromeOptions();
+            if (headless) {
+                chromeOptions.addArguments("--headless", "--disable-gpu", "--window-size=1920,1080");
+            }
+            driver.set(new ChromeDriver(chromeOptions));
+            log.info("ChromeDriver initialized.");
         }
 
         // Maximize window and load the URL

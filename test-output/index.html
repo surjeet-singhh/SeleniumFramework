@@ -149,8 +149,8 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;2&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;headless&quot; value=&quot;false&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;env&quot; value=&quot;dev&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;env&quot; value=&quot;qa&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;qa.tests.LoginPage&quot;/&gt;
     &lt;/classes&gt;
@@ -196,12 +196,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'qa.tests.LoginPage')
-data.setCell(0, 3, 6318);
+data.setCell(0, 3, 2946);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -228,21 +228,21 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">qa.tests.LoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setEnvironment(dev)</span>
+              <div class="configuration-class before">
+                <span class="method-name">setEnvironment(qa)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">setupDriver(chrome, false)</span>
-                <span class="method-start">33 ms</span>
+                <span class="method-name">setupDriver(firefox, false)</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">23719 ms</span>
+                <span class="method-start">8573 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30041 ms</span>
+                <span class="method-start">11534 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
