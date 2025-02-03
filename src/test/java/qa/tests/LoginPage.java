@@ -55,5 +55,7 @@ public class LoginPage extends BaseTest {
 
         // Verify the landing page is correct after login
         homePage.landingPage();
+        homePage.newBill();
+        //homePage.uploadProfileImage();
     }
 }

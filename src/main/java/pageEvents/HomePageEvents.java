@@ -5,6 +5,8 @@ import static org.testng.Assert.assertEquals;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import base.BaseTest;
 import utils.Constants;
 
@@ -13,6 +15,14 @@ public class HomePageEvents extends BaseTest {
 	 private static final Logger log = LogManager.getLogger(HomePageEvents.class); // Logger instance
     // Locator for the "Sign Out" element
     private By signOut = By.xpath("//*[@id='sidebar']/div/div/a[3]");
+    private By profileLink =By.xpath("//a[text()='Profile']");
+    private By fileInput = By.xpath("//img[@class='rounded-circle img-responsive mt-2 profile-image-lg default-user-bg-onerror']//following-sibling::div//input");
+    private By saveProfileIcon = By.cssSelector("i.fa.fa-check");
+    private By addItems = By.xpath("//div[@hidden]/div/input");
+    private By newBillTab =By.xpath("//div[text()='New Bill']");
+    String filePath ="C:\\Users\\SQE Labs\\Downloads\\IMG_20250106_125121925.jpg";
+   
+    
     
 
     /**
@@ -34,5 +44,22 @@ public class HomePageEvents extends BaseTest {
             "Sign Out text does not match the expected value.");
 
         log.info("Landing page verified successfully. 'Sign Out' text matches the expected value.");
+    }
+    
+    public void uploadProfileImage() {    	 
+    	 click(profileLink);
+    	 sendKeys(fileInput, filePath);
+    	 click(saveProfileIcon);
+    	 staticWait(10000);
+    	
+    }
+    
+    public void newBill() {
+    	click(newBillTab);
+    	sendKeys(addItems, filePath);
+    	 staticWait(1000);
+    	 click(saveProfileIcon);
+    	 staticWait(10000);
+    	
     }
 }

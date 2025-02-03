@@ -24,12 +24,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
+
 import utils.ConfigFileReader;
 
 public class BaseTest {
     private static final Logger log = LogManager.getLogger(BaseTest.class); // Logger instance
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     protected static ConfigFileReader configReader;
+    protected SoftAssert softAssert;
 
     /**
      * Set the environment from the test parameter.
@@ -66,6 +69,7 @@ public class BaseTest {
     @BeforeMethod
     @Parameters({"browser", "headless"})
     public void setupDriver(@Optional("chrome")String browser, @Optional("false")boolean headless) {
+    	softAssert = new SoftAssert();
         log.info("Setting up WebDriver for browser: {}, headless: {}", browser, headless);
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions chromeOptions = new ChromeOptions();
@@ -190,6 +194,12 @@ public class BaseTest {
         log.info("Entering text '{}' into element: {}", text, locator);
         WebElement element = waitForElementToBeVisible(locator, 10);
         element.clear();
+        element.sendKeys(text);
+    }
+    
+    public void sendKeys(By locator, String text) {
+        log.info("Entering text '{}' into element: {}", text, locator);        
+        WebElement element = getDriver().findElement(locator);
         element.sendKeys(text);
     }
 
